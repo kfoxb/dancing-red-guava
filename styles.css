@@ -8,6 +8,8 @@ body {
 }
 
 #head {
+	transform: rotate(3deg) translate(-126px, -225px);
+	position: absolute;
 	/* animation: head 0.6s 0.5s infinite normal; */
 }
 
@@ -49,12 +51,13 @@ body {
 
 
 #right-upper-arm {
-	height: 100px;
+	height: 76px;
 	width: 15px;
 	background-color: black;
 	/* animation: right-upper-arm 0.6s 0.5s infinite normal; */
-	transform:rotate(83deg);
+	transform: rotate(85deg) translate(-32px, 74px);
 	border-radius: 15px;
+	position: absolute;
 }
 
 @keyframes right-upper-arm {
@@ -91,12 +94,13 @@ body {
 }
 
 #right-lower-arm {
-	height: 100px;
+	height: 36px;
 	width: 15px;
 	background-color: black;
 	/* animation: right-lower-arm 0.6s 0.5s infinite normal; */
-	transform:rotate(116deg) translate(-65px, 30px);
+	transform:rotate(125deg) translate(59px, 79px);
 	border-radius: 15px;
+	position: absolute;
 }
 
 @keyframes right-lower-arm {
@@ -130,10 +134,4 @@ body {
 	100%{
 		transform:rotate(132deg) translate(-35px, 34px);
 	}
-}
-
-#right-arm {
-	position: relative;
-	left: -50px;
-	top: 50px;
 }

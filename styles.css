@@ -10,12 +10,13 @@ body {
 #head {
 	transform: rotate(3deg) translate(-126px, -225px);
 	position: absolute;
+	z-index: 1;
 	/* animation: head 0.6s 0.5s infinite normal; */
 }
 
 @keyframes head {
 	0%{
-		transform:rotate(3deg);
+		transform: rotate(3deg) translate(-126px, -225px);
 	}
 	10%{
 		transform:rotate(3deg) translate(0px, 10px);
@@ -62,7 +63,8 @@ body {
 
 @keyframes right-upper-arm {
 	0%{
-		transform:rotate(83deg);
+		transform: rotate(85deg) translate(-32px, 74px);
+		height: 76px;
 	}
 	11%{
 		transform:rotate(74deg);
@@ -105,7 +107,8 @@ body {
 
 @keyframes right-lower-arm {
 	0%{
-		transform:rotate(116deg) translate(-65px, 30px);
+		transform:rotate(125deg) translate(59px, 79px);
+		height: 36px;
 	}
 	11%{
 		transform:rotate(108deg) translate(-69px, 17px);
@@ -133,5 +136,313 @@ body {
 	}
 	100%{
 		transform:rotate(132deg) translate(-35px, 34px);
+	}
+}
+
+#left-upper-arm {
+	height: 76px;
+	width: 15px;
+	background-color: black;
+	/* animation: left-upper-arm 0.6s 0.5s infinite normal; */
+	transform: rotate(164deg) translate(5px, -28px);
+	border-radius: 15px;
+	position: absolute;
+}
+
+@keyframes left-upper-arm {
+	0%{
+		transform: rotate(164deg) translate(5px, -28px);
+		height: 76px;
+	}
+	11%{
+		transform:rotate(74deg);
+	}
+	22%{
+		transform:rotate(74deg);
+	}
+	33%{
+		transform:rotate(49deg);
+	}
+	44%{
+		transform:rotate(23deg);
+	}
+	55%{
+		transform:rotate(23deg);
+	}
+	66%{
+		transform:rotate(23deg);
+	}
+	77%{
+		transform:rotate(37deg);
+	}
+	88%{
+		transform:rotate(45deg);
+	}
+	100%{
+		transform:rotate(55deg);
+	}
+}
+
+#left-lower-arm {
+	height: 68px;
+	width: 15px;
+	background-color: black;
+	/* animation: left-lower-arm 0.6s 0.5s infinite normal; */
+	transform: rotate(130deg) translate(41px, -21px);
+	border-radius: 15px;
+	position: absolute;
+}
+
+@keyframes left-lower-arm {
+	0%{
+		transform: rotate(130deg) translate(41px, -21px);
+		height: 68px;
+	}
+	11%{
+		transform:rotate(74deg);
+	}
+	22%{
+		transform:rotate(74deg);
+	}
+	33%{
+		transform:rotate(49deg);
+	}
+	44%{
+		transform:rotate(23deg);
+	}
+	55%{
+		transform:rotate(23deg);
+	}
+	66%{
+		transform:rotate(23deg);
+	}
+	77%{
+		transform:rotate(37deg);
+	}
+	88%{
+		transform:rotate(45deg);
+	}
+	100%{
+		transform:rotate(55deg);
+	}
+}
+
+#spine {
+	height: 123px;
+	width: 15px;
+	background-color: black;
+	/* animation: spine 0.6s 0.5s infinite normal; */
+	transform: rotate(0deg) translate(-21px, 17px);
+	border-radius: 15px;
+	position: absolute;
+}
+
+@keyframes spine {
+	0%{
+		height: 123px;
+		transform: rotate(0deg) translate(-21px, 17px);
+	}
+	11%{
+		transform:rotate(74deg);
+	}
+	22%{
+		transform:rotate(74deg);
+	}
+	33%{
+		transform:rotate(49deg);
+	}
+	44%{
+		transform:rotate(23deg);
+	}
+	55%{
+		transform:rotate(23deg);
+	}
+	66%{
+		transform:rotate(23deg);
+	}
+	77%{
+		transform:rotate(37deg);
+	}
+	88%{
+		transform:rotate(45deg);
+	}
+	100%{
+		transform:rotate(55deg);
+	}
+}
+
+#right-upper-leg {
+	height: 95px;
+	width: 15px;
+	background-color: black;
+	/* animation: right-upper-leg 0.6s 0.5s infinite normal; */
+	transform: rotate(115deg) translate(89px, 21px);
+	border-radius: 15px;
+	position: absolute;
+}
+
+@keyframes right-upper-leg {
+	0%{
+		transform: rotate(115deg) translate(89px, 21px);
+		height: 95px;
+	}
+	11%{
+		transform:rotate(74deg);
+	}
+	22%{
+		transform:rotate(74deg);
+	}
+	33%{
+		transform:rotate(49deg);
+	}
+	44%{
+		transform:rotate(23deg);
+	}
+	55%{
+		transform:rotate(23deg);
+	}
+	66%{
+		transform:rotate(23deg);
+	}
+	77%{
+		transform:rotate(37deg);
+	}
+	88%{
+		transform:rotate(45deg);
+	}
+	100%{
+		transform:rotate(55deg);
+	}
+}
+
+#right-lower-leg {
+	height: 47px;
+	width: 15px;
+	background-color: black;
+	/* animation: right-lower-leg 0.6s 0.5s infinite normal; */
+	transform: rotate(172deg) translate(106px, -81px);
+	border-radius: 15px;
+	position: absolute;
+}
+
+@keyframes right-lower-leg {
+	0%{
+		height: 47px;
+		transform: rotate(172deg) translate(106px, -81px);
+	}
+	11%{
+		transform:rotate(74deg);
+	}
+	22%{
+		transform:rotate(74deg);
+	}
+	33%{
+		transform:rotate(49deg);
+	}
+	44%{
+		transform:rotate(23deg);
+	}
+	55%{
+		transform:rotate(23deg);
+	}
+	66%{
+		transform:rotate(23deg);
+	}
+	77%{
+		transform:rotate(37deg);
+	}
+	88%{
+		transform:rotate(45deg);
+	}
+	100%{
+		transform:rotate(55deg);
+	}
+}
+
+#left-upper-leg {
+	height: 67px;
+	width: 15px;
+	background-color: black;
+	/* animation: left-upper-leg 0.6s 0.5s infinite normal; */
+	transform: rotate(-12deg) translate(-41px, 117px);
+	border-radius: 15px;
+	position: absolute;
+}
+
+@keyframes left-upper-leg {
+	0%{
+		transform: rotate(-12deg) translate(-41px, 117px);
+		height: 67px;
+	}
+	11%{
+		transform:rotate(74deg);
+	}
+	22%{
+		transform:rotate(74deg);
+	}
+	33%{
+		transform:rotate(49deg);
+	}
+	44%{
+		transform:rotate(23deg);
+	}
+	55%{
+		transform:rotate(23deg);
+	}
+	66%{
+		transform:rotate(23deg);
+	}
+	77%{
+		transform:rotate(37deg);
+	}
+	88%{
+		transform:rotate(45deg);
+	}
+	100%{
+		transform:rotate(55deg);
+	}
+}
+
+#left-lower-leg {
+	height: 71px;
+	width: 15px;
+	background-color: black;
+	/* animation: left-lower-leg 0.6s 0.5s infinite normal; */
+	transform: rotate(12deg) translate(22px, 177px);
+	border-radius: 15px;
+	position: absolute;
+}
+
+@keyframes left-lower-leg {
+	0%{
+		transform: rotate(12deg) translate(22px, 177px);
+		height: 71px;
+	}
+	11%{
+		transform:rotate(74deg);
+	}
+	22%{
+		transform:rotate(74deg);
+	}
+	33%{
+		transform:rotate(49deg);
+	}
+	44%{
+		transform:rotate(23deg);
+	}
+	55%{
+		transform:rotate(23deg);
+	}
+	66%{
+		transform:rotate(23deg);
+	}
+	77%{
+		transform:rotate(37deg);
+	}
+	88%{
+		transform:rotate(45deg);
+	}
+	100%{
+		transform:rotate(55deg);
 	}
 }

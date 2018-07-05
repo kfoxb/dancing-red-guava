@@ -21,32 +21,8 @@ body {
 	10%{
 		transform: rotate(1deg) translate(-129px, -236px);
 	}
-	20%{
-		transform:rotate(-3deg) translate(-15px, 20px);
-	}
-	30%{
-		transform:rotate(-8deg) translate(-30px, 30px);
-	}
-	40%{
-		transform:rotate(-6deg) translate(-25px, 30px);
-	}
-	50%{
-		transform:rotate(-4deg) translate(-25px, 30px);
-	}
-	60%{
-		transform:rotate(-4deg) translate(-30px, 35px);
-	}
-	70%{
-		transform:rotate(-2deg) translate(-25px, 35px);
-	}
-	80%{
-		transform:rotate(0deg) translate(-10px, 40px);
-	}
-	90%{
-		transform:rotate(3deg) translate(10px, 40px);
-	}
 	100%{
-		transform:rotate(3deg);
+		transform: rotate(3deg) translate(-126px, -225px);
 	}
 }
 
@@ -66,33 +42,13 @@ body {
 		transform: rotate(85deg) translate(-32px, 74px);
 		height: 76px;
 	}
-	11%{
+	10%{
 		transform: rotate(67deg) translate(-51px, 61px);
 		height: 76px;
 	}
-	22%{
-		transform:rotate(74deg);
-	}
-	33%{
-		transform:rotate(49deg);
-	}
-	44%{
-		transform:rotate(23deg);
-	}
-	55%{
-		transform:rotate(23deg);
-	}
-	66%{
-		transform:rotate(23deg);
-	}
-	77%{
-		transform:rotate(37deg);
-	}
-	88%{
-		transform:rotate(45deg);
-	}
 	100%{
-		transform:rotate(55deg);
+		transform: rotate(85deg) translate(-32px, 74px);
+		height: 76px;
 	}
 }
 
@@ -111,33 +67,13 @@ body {
 		transform:rotate(125deg) translate(59px, 79px);
 		height: 36px;
 	}
-	11%{
+	10%{
 		transform: rotate(118deg) translate(59px, 79px);
 		height: 36px;
 	}
-	22%{
-		transform:rotate(108deg) translate(-69px, 17px);
-	}
-	33%{
-		transform:rotate(133deg) translate(-34px, 31px);
-	}
-	44%{
-		transform:rotate(67deg) translate(-63px, -51px);
-	}
-	55%{
-		transform:rotate(50deg) translate(-55px, -69px);
-	}
-	66%{
-		transform:rotate(43deg) translate(-52px, -75px);
-	}
-	77%{
-		transform:rotate(46deg) translate(-54px, -72px);
-	}
-	88%{
-		transform:rotate(113deg) translate(-53px, 12px);
-	}
 	100%{
 		transform:rotate(132deg) translate(-35px, 34px);
+		height: 36px;
 	}
 }
 
@@ -156,33 +92,13 @@ body {
 		transform: rotate(164deg) translate(5px, -28px);
 		height: 76px;
 	}
-	11%{
+	10%{
 		transform: rotate(154deg) translate(3px, -16px);
 		height: 76px;
 	}
-	22%{
-		transform:rotate(74deg);
-	}
-	33%{
-		transform:rotate(49deg);
-	}
-	44%{
-		transform:rotate(23deg);
-	}
-	55%{
-		transform:rotate(23deg);
-	}
-	66%{
-		transform:rotate(23deg);
-	}
-	77%{
-		transform:rotate(37deg);
-	}
-	88%{
-		transform:rotate(45deg);
-	}
 	100%{
-		transform:rotate(55deg);
+		transform: rotate(164deg) translate(5px, -28px);
+		height: 76px;
 	}
 }
 
@@ -201,33 +117,13 @@ body {
 		transform: rotate(130deg) translate(41px, -21px);
 		height: 68px;
 	}
-	11%{
+	10%{
 		transform: rotate(118deg) translate(41px, -21px);
 		height: 57px;
 	}
-	22%{
-		transform:rotate(74deg);
-	}
-	33%{
-		transform:rotate(49deg);
-	}
-	44%{
-		transform:rotate(23deg);
-	}
-	55%{
-		transform:rotate(23deg);
-	}
-	66%{
-		transform:rotate(23deg);
-	}
-	77%{
-		transform:rotate(37deg);
-	}
-	88%{
-		transform:rotate(45deg);
-	}
 	100%{
-		transform:rotate(55deg);
+		transform: rotate(130deg) translate(41px, -21px);
+		height: 68px;
 	}
 }
 
@@ -246,33 +142,13 @@ body {
 		transform: rotate(0deg) translate(-21px, 17px);
 		height: 123px;
 	}
-	11%{
+	10%{
 		transform: rotate(0deg) translate(-21px, 17px);
 		height: 138px;
 	}
-	22%{
-		transform:rotate(74deg);
-	}
-	33%{
-		transform:rotate(49deg);
-	}
-	44%{
-		transform:rotate(23deg);
-	}
-	55%{
-		transform:rotate(23deg);
-	}
-	66%{
-		transform:rotate(23deg);
-	}
-	77%{
-		transform:rotate(37deg);
-	}
-	88%{
-		transform:rotate(45deg);
-	}
 	100%{
-		transform:rotate(55deg);
+		transform: rotate(0deg) translate(-21px, 17px);
+		height: 123px;
 	}
 }
 
@@ -291,33 +167,13 @@ body {
 		transform: rotate(115deg) translate(89px, 21px);
 		height: 95px;
 	}
-	11%{
+	10%{
 		transform: rotate(115deg) translate(97px, 19px);
 		height: 91px;
 	}
-	22%{
-		transform:rotate(74deg);
-	}
-	33%{
-		transform:rotate(49deg);
-	}
-	44%{
-		transform:rotate(23deg);
-	}
-	55%{
-		transform:rotate(23deg);
-	}
-	66%{
-		transform:rotate(23deg);
-	}
-	77%{
-		transform:rotate(37deg);
-	}
-	88%{
-		transform:rotate(45deg);
-	}
 	100%{
-		transform:rotate(55deg);
+		transform: rotate(115deg) translate(89px, 21px);
+		height: 95px;
 	}
 }
 
@@ -336,33 +192,13 @@ body {
 		transform: rotate(172deg) translate(106px, -81px);
 		height: 47px;
 	}
-	11%{
+	10%{
 		transform: rotate(178deg) translate(96px, -102px);
 		height: 43px;
 	}
-	22%{
-		transform:rotate(74deg);
-	}
-	33%{
-		transform:rotate(49deg);
-	}
-	44%{
-		transform:rotate(23deg);
-	}
-	55%{
-		transform:rotate(23deg);
-	}
-	66%{
-		transform:rotate(23deg);
-	}
-	77%{
-		transform:rotate(37deg);
-	}
-	88%{
-		transform:rotate(45deg);
-	}
 	100%{
-		transform:rotate(55deg);
+		transform: rotate(172deg) translate(106px, -81px);
+		height: 47px;
 	}
 }
 
@@ -381,33 +217,13 @@ body {
 		transform: rotate(-12deg) translate(-41px, 117px);
 		height: 67px;
 	}
-	11%{
+	10%{
 		height: 73px;
 		transform: rotate(-22deg) translate(-62px, 122px);
 	}
-	22%{
-		transform:rotate(74deg);
-	}
-	33%{
-		transform:rotate(49deg);
-	}
-	44%{
-		transform:rotate(23deg);
-	}
-	55%{
-		transform:rotate(23deg);
-	}
-	66%{
-		transform:rotate(23deg);
-	}
-	77%{
-		transform:rotate(37deg);
-	}
-	88%{
-		transform:rotate(45deg);
-	}
 	100%{
-		transform:rotate(55deg);
+		transform: rotate(-12deg) translate(-41px, 117px);
+		height: 67px;
 	}
 }
 
@@ -426,32 +242,12 @@ body {
 		transform: rotate(12deg) translate(22px, 177px);
 		height: 71px;
 	}
-	11%{
+	10%{
 		transform: rotate(29deg) translate(83px, 175px);
 		height: 58px;
 	}
-	22%{
-		transform:rotate(74deg);
-	}
-	33%{
-		transform:rotate(49deg);
-	}
-	44%{
-		transform:rotate(23deg);
-	}
-	55%{
-		transform:rotate(23deg);
-	}
-	66%{
-		transform:rotate(23deg);
-	}
-	77%{
-		transform:rotate(37deg);
-	}
-	88%{
-		transform:rotate(45deg);
-	}
 	100%{
-		transform:rotate(55deg);
+		transform: rotate(12deg) translate(22px, 177px);
+		height: 71px;
 	}
 }

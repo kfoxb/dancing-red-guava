@@ -1,0 +1,90 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#right-upper-arm {
+	height: 100px;
+	width: 20px;
+	background-color: black;
+	animation: right-upper-arm 2s 1s infinite alternate;
+	transform:rotate(83deg);
+}
+
+@keyframes right-upper-arm {
+	0%{
+		transform:rotate(83deg);
+	}
+	11%{
+		transform:rotate(74deg);
+	}
+	22%{
+		transform:rotate(74deg);
+	}
+	33%{
+		transform:rotate(49deg);
+	}
+	44%{
+		transform:rotate(23deg);
+	}
+	55%{
+		transform:rotate(23deg);
+	}
+	66%{
+		transform:rotate(23deg);
+	}
+	77%{
+		transform:rotate(37deg);
+	}
+	88%{
+		transform:rotate(45deg);
+	}
+	100%{
+		transform:rotate(55deg);
+	}
+}
+
+#lprarm {
+	height: 100px;
+	width: 20px;
+	background-color: black;
+	animation: right-upper-arm 2s 1s infinite alternate;
+	transform:rotate(83deg);
+}
+
+@keyframes left-upper-arm {
+	0%{
+		transform:rotate(83deg);
+	}
+	11%{
+		transform:rotate(74deg);
+	}
+	22%{
+		transform:rotate(74deg);
+	}
+	33%{
+		transform:rotate(49deg);
+	}
+	44%{
+		transform:rotate(23deg);
+	}
+	55%{
+		transform:rotate(23deg);
+	}
+	66%{
+		transform:rotate(23deg);
+	}
+	77%{
+		transform:rotate(37deg);
+	}
+	88%{
+		transform:rotate(45deg);
+	}
+	100%{
+		transform:rotate(55deg);
+	}
+}

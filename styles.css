@@ -8,7 +8,7 @@ body {
 }
 
 #head {
-	transform: rotate(1deg) translate(-129px, -236px);
+	transform: rotate(-4deg) translate(-133px, -216px);
 	position: absolute;
 	z-index: 1;
 	/* animation: head 0.6s 0.5s infinite normal; */
@@ -21,6 +21,9 @@ body {
 	10%{
 		transform: rotate(1deg) translate(-129px, -236px);
 	}
+	20%{
+		transform: rotate(-4deg) translate(-133px, -216px);
+	}
 	100%{
 		transform: rotate(3deg) translate(-126px, -225px);
 	}
@@ -32,7 +35,7 @@ body {
 	width: 15px;
 	background-color: black;
 	/* animation: right-upper-arm 0.6s 0.5s infinite normal; */
-	transform: rotate(67deg) translate(-51px, 61px);
+	transform: rotate(69deg) translate(-17px, 64px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -46,6 +49,10 @@ body {
 		transform: rotate(67deg) translate(-51px, 61px);
 		height: 76px;
 	}
+	20%{
+		transform: rotate(69deg) translate(-17px, 64px);
+		height: 76px;
+	}
 	100%{
 		transform: rotate(85deg) translate(-32px, 74px);
 		height: 76px;
@@ -57,7 +64,7 @@ body {
 	width: 15px;
 	background-color: black;
 	/* animation: right-lower-arm 0.6s 0.5s infinite normal; */
-	transform: rotate(118deg) translate(59px, 79px);
+	transform: rotate(120deg) translate(85px, 55px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -71,6 +78,10 @@ body {
 		transform: rotate(118deg) translate(59px, 79px);
 		height: 36px;
 	}
+	20%{
+		transform: rotate(120deg) translate(85px, 55px);
+		height: 30px;
+	}
 	100%{
 		transform:rotate(125deg) translate(59px, 79px);
 		height: 36px;
@@ -82,7 +93,7 @@ body {
 	width: 15px;
 	background-color: black;
 	/* animation: left-upper-arm 0.6s 0.5s infinite normal; */
-	transform: rotate(154deg) translate(3px, -16px);
+	transform: rotate(141deg) translate(14px, -20px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -96,6 +107,10 @@ body {
 		transform: rotate(154deg) translate(3px, -16px);
 		height: 76px;
 	}
+	20%{
+		transform: rotate(141deg) translate(14px, -20px);
+		height: 76px;
+	}
 	100%{
 		transform: rotate(164deg) translate(5px, -28px);
 		height: 76px;
@@ -103,11 +118,11 @@ body {
 }
 
 #left-lower-arm {
-	height: 57px;
+	height: 32px;
 	width: 15px;
 	background-color: black;
 	/* animation: left-lower-arm 0.6s 0.5s infinite normal; */
-	transform: rotate(118deg) translate(41px, -21px);
+	transform: rotate(78deg) translate(76px, 2px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -121,6 +136,10 @@ body {
 		transform: rotate(118deg) translate(41px, -21px);
 		height: 57px;
 	}
+	20%{
+		transform: rotate(78deg) translate(76px, 2px);
+		height: 32px;
+	}
 	100%{
 		transform: rotate(130deg) translate(41px, -21px);
 		height: 68px;
@@ -132,7 +151,7 @@ body {
 	width: 15px;
 	background-color: black;
 	/* animation: spine 0.6s 0.5s infinite normal; */
-	transform: rotate(0deg) translate(-21px, 17px);
+	transform: rotate(-3deg) translate(-31px, 18px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -146,6 +165,10 @@ body {
 		transform: rotate(0deg) translate(-21px, 17px);
 		height: 138px;
 	}
+	20%{
+		transform: rotate(-3deg) translate(-31px, 18px);
+		height: 138px;
+	}
 	100%{
 		transform: rotate(0deg) translate(-21px, 17px);
 		height: 123px;
@@ -157,7 +180,7 @@ body {
 	width: 15px;
 	background-color: black;
 	/* animation: right-upper-leg 0.6s 0.5s infinite normal; */
-	transform: rotate(115deg) translate(97px, 19px);
+	transform: rotate(45deg) translate(57px, 134px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -171,6 +194,10 @@ body {
 		transform: rotate(115deg) translate(97px, 19px);
 		height: 91px;
 	}
+	20%{
+		transform: rotate(45deg) translate(57px, 134px);
+		height: 91px;
+	}
 	100%{
 		transform: rotate(115deg) translate(89px, 21px);
 		height: 95px;
@@ -178,11 +205,11 @@ body {
 }
 
 #right-lower-leg {
-	height: 43px;
+	height: 66px;
 	width: 15px;
 	background-color: black;
 	/* animation: right-lower-leg 0.6s 0.5s infinite normal; */
-	transform: rotate(178deg) translate(96px, -102px);
+	transform: rotate(141deg) translate(176px, -111px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -196,6 +223,10 @@ body {
 		transform: rotate(178deg) translate(96px, -102px);
 		height: 43px;
 	}
+	20%{
+		transform: rotate(141deg) translate(176px, -111px);
+		height: 66px;
+	}
 	100%{
 		transform: rotate(172deg) translate(106px, -81px);
 		height: 47px;
@@ -203,11 +234,11 @@ body {
 }
 
 #left-upper-leg {
-	height: 73px;
+	height: 88px;
 	width: 15px;
 	background-color: black;
 	/* animation: left-upper-leg 0.6s 0.5s infinite normal; */
-	transform: rotate(-22deg) translate(-62px, 122px);
+	transform: rotate(-33deg) translate(-84px, 115px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -221,6 +252,10 @@ body {
 		height: 73px;
 		transform: rotate(-22deg) translate(-62px, 122px);
 	}
+	20%{
+		transform: rotate(-33deg) translate(-84px, 115px);
+		height: 88px;
+	}
 	100%{
 		transform: rotate(-12deg) translate(-41px, 117px);
 		height: 67px;
@@ -228,11 +263,11 @@ body {
 }
 
 #left-lower-leg {
-	height: 58px;
+	height: 51px;
 	width: 15px;
 	background-color: black;
 	/* animation: left-lower-leg 0.6s 0.5s infinite normal; */
-	transform: rotate(29deg) translate(83px, 175px);
+	transform: rotate(53deg) translate(162px, 124px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -245,6 +280,10 @@ body {
 	10%{
 		transform: rotate(29deg) translate(83px, 175px);
 		height: 58px;
+	}
+	20%{
+		transform: rotate(53deg) translate(162px, 124px);
+		height: 51px;
 	}
 	100%{
 		transform: rotate(12deg) translate(22px, 177px);

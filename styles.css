@@ -8,7 +8,7 @@ body {
 }
 
 #head {
-	transform: rotate(3deg) translate(-126px, -225px);
+	transform: rotate(1deg) translate(-129px, -236px);
 	position: absolute;
 	z-index: 1;
 	/* animation: head 0.6s 0.5s infinite normal; */
@@ -19,7 +19,7 @@ body {
 		transform: rotate(3deg) translate(-126px, -225px);
 	}
 	10%{
-		transform:rotate(3deg) translate(0px, 10px);
+		transform: rotate(1deg) translate(-129px, -236px);
 	}
 	20%{
 		transform:rotate(-3deg) translate(-15px, 20px);
@@ -56,7 +56,7 @@ body {
 	width: 15px;
 	background-color: black;
 	/* animation: right-upper-arm 0.6s 0.5s infinite normal; */
-	transform: rotate(85deg) translate(-32px, 74px);
+	transform: rotate(67deg) translate(-51px, 61px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -67,7 +67,8 @@ body {
 		height: 76px;
 	}
 	11%{
-		transform:rotate(74deg);
+		transform: rotate(67deg) translate(-51px, 61px);
+		height: 76px;
 	}
 	22%{
 		transform:rotate(74deg);
@@ -100,7 +101,7 @@ body {
 	width: 15px;
 	background-color: black;
 	/* animation: right-lower-arm 0.6s 0.5s infinite normal; */
-	transform:rotate(125deg) translate(59px, 79px);
+	transform: rotate(118deg) translate(59px, 79px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -111,7 +112,8 @@ body {
 		height: 36px;
 	}
 	11%{
-		transform:rotate(108deg) translate(-69px, 17px);
+		transform: rotate(118deg) translate(59px, 79px);
+		height: 36px;
 	}
 	22%{
 		transform:rotate(108deg) translate(-69px, 17px);
@@ -144,7 +146,7 @@ body {
 	width: 15px;
 	background-color: black;
 	/* animation: left-upper-arm 0.6s 0.5s infinite normal; */
-	transform: rotate(164deg) translate(5px, -28px);
+	transform: rotate(154deg) translate(3px, -16px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -155,7 +157,8 @@ body {
 		height: 76px;
 	}
 	11%{
-		transform:rotate(74deg);
+		transform: rotate(154deg) translate(3px, -16px);
+		height: 76px;
 	}
 	22%{
 		transform:rotate(74deg);
@@ -184,11 +187,11 @@ body {
 }
 
 #left-lower-arm {
-	height: 68px;
+	height: 57px;
 	width: 15px;
 	background-color: black;
 	/* animation: left-lower-arm 0.6s 0.5s infinite normal; */
-	transform: rotate(130deg) translate(41px, -21px);
+	transform: rotate(118deg) translate(41px, -21px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -199,7 +202,8 @@ body {
 		height: 68px;
 	}
 	11%{
-		transform:rotate(74deg);
+		transform: rotate(118deg) translate(41px, -21px);
+		height: 57px;
 	}
 	22%{
 		transform:rotate(74deg);
@@ -228,7 +232,7 @@ body {
 }
 
 #spine {
-	height: 123px;
+	height: 138px;
 	width: 15px;
 	background-color: black;
 	/* animation: spine 0.6s 0.5s infinite normal; */
@@ -243,7 +247,7 @@ body {
 		transform: rotate(0deg) translate(-21px, 17px);
 	}
 	11%{
-		transform:rotate(74deg);
+		height: 138px;
 	}
 	22%{
 		transform:rotate(74deg);
@@ -272,11 +276,11 @@ body {
 }
 
 #right-upper-leg {
-	height: 95px;
+	height: 91px;
 	width: 15px;
 	background-color: black;
 	/* animation: right-upper-leg 0.6s 0.5s infinite normal; */
-	transform: rotate(115deg) translate(89px, 21px);
+	transform: rotate(115deg) translate(97px, 19px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -287,7 +291,8 @@ body {
 		height: 95px;
 	}
 	11%{
-		transform:rotate(74deg);
+		transform: rotate(115deg) translate(97px, 19px);
+		height: 91px;
 	}
 	22%{
 		transform:rotate(74deg);
@@ -316,22 +321,23 @@ body {
 }
 
 #right-lower-leg {
-	height: 47px;
+	height: 43px;
 	width: 15px;
 	background-color: black;
 	/* animation: right-lower-leg 0.6s 0.5s infinite normal; */
-	transform: rotate(172deg) translate(106px, -81px);
+	transform: rotate(178deg) translate(96px, -102px);
 	border-radius: 15px;
 	position: absolute;
 }
 
 @keyframes right-lower-leg {
 	0%{
-		height: 47px;
 		transform: rotate(172deg) translate(106px, -81px);
+		height: 47px;
 	}
 	11%{
-		transform:rotate(74deg);
+		transform: rotate(178deg) translate(96px, -102px);
+		height: 43px;
 	}
 	22%{
 		transform:rotate(74deg);
@@ -360,11 +366,11 @@ body {
 }
 
 #left-upper-leg {
-	height: 67px;
+	height: 73px;
 	width: 15px;
 	background-color: black;
 	/* animation: left-upper-leg 0.6s 0.5s infinite normal; */
-	transform: rotate(-12deg) translate(-41px, 117px);
+	transform: rotate(-22deg) translate(-62px, 122px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -375,7 +381,8 @@ body {
 		height: 67px;
 	}
 	11%{
-		transform:rotate(74deg);
+		height: 73px;
+		transform: rotate(-22deg) translate(-62px, 122px);
 	}
 	22%{
 		transform:rotate(74deg);
@@ -404,11 +411,11 @@ body {
 }
 
 #left-lower-leg {
-	height: 71px;
+	height: 58px;
 	width: 15px;
 	background-color: black;
 	/* animation: left-lower-leg 0.6s 0.5s infinite normal; */
-	transform: rotate(12deg) translate(22px, 177px);
+	transform: rotate(29deg) translate(83px, 175px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -419,7 +426,8 @@ body {
 		height: 71px;
 	}
 	11%{
-		transform:rotate(74deg);
+		transform: rotate(29deg) translate(83px, 175px);
+		height: 58px;
 	}
 	22%{
 		transform:rotate(74deg);

@@ -90,3 +90,9 @@ body {
 		transform:rotate(132deg) translate(-35px, 34px);
 	}
 }
+
+#right-arm {
+	position: relative;
+	left: -50px;
+	top: 50px;
+}

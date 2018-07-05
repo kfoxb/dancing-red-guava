@@ -243,10 +243,11 @@ body {
 
 @keyframes spine {
 	0%{
-		height: 123px;
 		transform: rotate(0deg) translate(-21px, 17px);
+		height: 123px;
 	}
 	11%{
+		transform: rotate(0deg) translate(-21px, 17px);
 		height: 138px;
 	}
 	22%{

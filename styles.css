@@ -7,11 +7,50 @@ body {
 	position: absolute;
 }
 
+#head {
+	animation: head 0.6s 0.5s infinite alternate;
+	transform:rotate(3deg) translate(0px, 0px);
+}
+
+@keyframes head {
+	0%{
+		transform:rotate(3deg);
+	}
+	11%{
+		transform:rotate(3deg) translate(0px, 10px);
+	}
+	22%{
+		transform:rotate(-3deg) translate(-15px, 20px);
+	}
+	33%{
+		transform:rotate(-8deg) translate(-30px, 30px);
+	}
+	44%{
+		transform:rotate(-6deg) translate(-25px, 30px);
+	}
+	55%{
+		transform:rotate(-4deg) translate(-25px, 30px);
+	}
+	66%{
+		transform:rotate(-4deg) translate(-30px, 35px);
+	}
+	77%{
+		transform:rotate(-2deg) translate(-25px, 35px);
+	}
+	88%{
+		transform:rotate(0deg) translate(-10px, 40px);
+	}
+	100%{
+		transform:rotate(3deg) translate(10px, 40px);
+	}
+}
+
+
 #right-upper-arm {
 	height: 100px;
 	width: 15px;
 	background-color: black;
-	animation: right-upper-arm 2s 1s infinite alternate;
+	animation: right-upper-arm 0.6s 0.5s infinite alternate;
 	transform:rotate(83deg);
 	border-radius: 15px;
 }
@@ -53,7 +92,7 @@ body {
 	height: 100px;
 	width: 15px;
 	background-color: black;
-	animation: right-lower-arm 2s 1s infinite alternate;
+	animation: right-lower-arm 0.6s 0.5s infinite alternate;
 	transform:rotate(116deg) translate(-65px, 30px);
 	border-radius: 15px;
 }

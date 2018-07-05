@@ -9,10 +9,11 @@ body {
 
 #right-upper-arm {
 	height: 100px;
-	width: 20px;
+	width: 15px;
 	background-color: black;
 	animation: right-upper-arm 2s 1s infinite alternate;
 	transform:rotate(83deg);
+	border-radius: 15px;
 }
 
 @keyframes right-upper-arm {
@@ -50,10 +51,11 @@ body {
 
 #right-lower-arm {
 	height: 100px;
-	width: 20px;
+	width: 15px;
 	background-color: black;
 	animation: right-lower-arm 2s 1s infinite alternate;
 	transform:rotate(116deg) translate(-65px, 30px);
+	border-radius: 15px;
 }
 
 @keyframes right-lower-arm {

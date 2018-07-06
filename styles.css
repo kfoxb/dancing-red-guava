@@ -11,7 +11,7 @@ body {
 	transform: rotate(3deg) translate(-124px, -184px);
 	position: absolute;
 	z-index: 1;
-	animation: head 0.6s 0.5s infinite normal;
+	animation: head 0.8571428572s 0.5s infinite normal;
 }
 
 @keyframes head {
@@ -55,7 +55,7 @@ body {
 	height: 76px;
 	width: 15px;
 	background-color: black;
-	animation: right-upper-arm 0.6s 0.5s infinite normal;
+	animation: right-upper-arm 0.8571428572s 0.5s infinite normal;
 	transform: rotate(47deg) translate(-19px, 52px);
 	border-radius: 15px;
 	position: absolute;
@@ -112,7 +112,7 @@ body {
 	height: 37px;
 	width: 15px;
 	background-color: black;
-	animation: right-lower-arm 0.6s 0.5s infinite normal;
+	animation: right-lower-arm 0.8571428572s 0.5s infinite normal;
 	transform: rotate(137deg) translate(96px, -7px);
 	border-radius: 15px;
 	position: absolute;
@@ -169,7 +169,7 @@ body {
 	height: 76px;
 	width: 15px;
 	background-color: black;
-	animation: left-upper-arm 0.6s 0.5s infinite normal;
+	animation: left-upper-arm 0.8571428572s 0.5s infinite normal;
 	transform: rotate(143deg) translate(11px, -46px);
 	border-radius: 15px;
 	position: absolute;
@@ -226,7 +226,7 @@ body {
 	height: 33px;
 	width: 15px;
 	background-color: black;
-	animation: left-lower-arm 0.6s 0.5s infinite normal;
+	animation: left-lower-arm 0.8571428572s 0.5s infinite normal;
 	transform: rotate(89deg) translate(90px, -22px);
 	border-radius: 15px;
 	position: absolute;
@@ -283,7 +283,7 @@ body {
 	height: 138px;
 	width: 15px;
 	background-color: black;
-	animation: spine 0.6s 0.5s infinite normal;
+	animation: spine 0.8571428572s 0.5s infinite normal;
 	transform: rotate(12deg) translate(-9px, 29px);
 	border-radius: 15px;
 	position: absolute;
@@ -340,7 +340,7 @@ body {
 	height: 70px;
 	width: 15px;
 	background-color: black;
-	animation: right-upper-leg 0.6s 0.5s infinite normal;
+	animation: right-upper-leg 0.8571428572s 0.5s infinite normal;
 	transform: rotate(79deg) translate(111px, 85px);
 	border-radius: 15px;
 	position: absolute;
@@ -397,7 +397,7 @@ body {
 	height: 62px;
 	width: 15px;
 	background-color: black;
-	animation: right-lower-leg 0.6s 0.5s infinite normal;
+	animation: right-lower-leg 0.8571428572s 0.5s infinite normal;
 	transform: rotate(165deg) translate(121px, -130px);
 	border-radius: 15px;
 	position: absolute;
@@ -454,7 +454,7 @@ body {
 	height: 59px;
 	width: 15px;
 	background-color: black;
-	animation: left-upper-leg 0.6s 0.5s infinite normal;
+	animation: left-upper-leg 0.8571428572s 0.5s infinite normal;
 	transform: rotate(-27deg) translate(-78px, 123px);
 	border-radius: 15px;
 	position: absolute;
@@ -511,7 +511,7 @@ body {
 	height: 57px;
 	width: 15px;
 	background-color: black;
-	animation: left-lower-leg 0.6s 0.5s infinite normal;
+	animation: left-lower-leg 0.8571428572s 0.5s infinite normal;
 	transform: rotate(9deg) translate(23px, 189px);
 	border-radius: 15px;
 	position: absolute;

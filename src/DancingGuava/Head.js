@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import HeadSvg from './head.svg'
+import HeadSvg from './HeadSvg'
 
 const HeadAnimation = keyframes`
   0%{
@@ -38,7 +38,7 @@ const HeadAnimation = keyframes`
   }
 `;
 
-const StyledHead = styled.img`
+const StyledHead = styled.div`
   transform: rotate(3deg) translate(-124px, -184px);
   position: absolute;
   z-index: 1;
@@ -46,5 +46,9 @@ const StyledHead = styled.img`
 `;
 
 export default function Head() {
-  return (<StyledHead src={HeadSvg}/>);
+  return (
+    <StyledHead>
+      <HeadSvg />
+    </StyledHead>
+  );
 };

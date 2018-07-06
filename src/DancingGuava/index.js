@@ -4,6 +4,8 @@ import RightUpperArm from './RightUpperArm';
 import RightLowerArm from './RightLowerArm';
 import LeftUpperArm from './LeftUpperArm';
 import LeftLowerArm from './LeftLowerArm';
+import RightUpperLeg from './RightUpperLeg';
+import Spine from './Spine';
 import './styles.css';
 
 class App extends Component {
@@ -15,11 +17,11 @@ class App extends Component {
     <RightLowerArm />
     <LeftUpperArm />
     <LeftLowerArm />
-    <div id="right-upper-leg"></div>
+    <RightUpperLeg />
     <div id="right-lower-leg"></div>
     <div id="left-upper-leg"></div>
     <div id="left-lower-leg"></div>
-    <div id="spine"></div>
+    <Spine />
   </Fragment>
     );
   }

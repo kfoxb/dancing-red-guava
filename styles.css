@@ -8,7 +8,7 @@ body {
 }
 
 #head {
-	transform: rotate(-8deg) translate(-153px, -242px);
+	transform: rotate(1deg) translate(-138px, -181px);
 	position: absolute;
 	z-index: 1;
 	/* animation: head 0.6s 0.5s infinite normal; */
@@ -36,6 +36,12 @@ body {
 	60%{
 		transform: rotate(-8deg) translate(-153px, -242px);
 	}
+	70%{
+		transform: rotate(-2deg) translate(-143px, -221px);
+	}
+	80%{
+		transform: rotate(1deg) translate(-138px, -181px);
+	}
 	100%{
 		transform: rotate(3deg) translate(-126px, -225px);
 	}
@@ -47,7 +53,7 @@ body {
 	width: 15px;
 	background-color: black;
 	/* animation: right-upper-arm 0.6s 0.5s infinite normal; */
-	transform: rotate(4deg) translate(-72px, 15px);
+	transform: rotate(43deg) translate(-15px, 54px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -81,6 +87,14 @@ body {
 		transform: rotate(4deg) translate(-72px, 15px);
 		height: 76px;
 	}
+	70%{
+		transform: rotate(28deg) translate(-32px, 44px);
+		height: 76px;
+	}
+	80%{
+		transform: rotate(43deg) translate(-15px, 54px);
+		height: 76px;
+	}
 	100%{
 		transform: rotate(85deg) translate(-32px, 74px);
 		height: 76px;
@@ -88,11 +102,11 @@ body {
 }
 
 #right-lower-arm {
-	height: 72px;
+	height: 28px;
 	width: 15px;
 	background-color: black;
 	/* animation: right-lower-arm 0.6s 0.5s infinite normal; */
-	transform: rotate(35deg) translate(-34px, 53px);
+	transform: rotate(120deg) translate(100px, 15px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -126,6 +140,14 @@ body {
 		transform: rotate(35deg) translate(-34px, 53px);
 		height: 72px;
 	}
+	70%{
+		transform: rotate(46deg) translate(9px, 87px);
+		height: 34px;
+	}
+	80%{
+		transform: rotate(120deg) translate(100px, 15px);
+		height: 28px;
+	}
 	100%{
 		transform:rotate(125deg) translate(59px, 79px);
 		height: 36px;
@@ -137,7 +159,7 @@ body {
 	width: 15px;
 	background-color: black;
 	/* animation: left-upper-arm 0.6s 0.5s infinite normal; */
-	transform: rotate(66deg) translate(-36px, -6px);
+	transform: rotate(123deg) translate(17px, -24px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -171,6 +193,14 @@ body {
 		transform: rotate(66deg) translate(-36px, -6px);
 		height: 76px;
 	}
+	70%{
+		transform: rotate(73deg) translate(-20px, -6px);
+		height: 76px;
+	}
+	80%{
+		transform: rotate(123deg) translate(17px, -24px);
+		height: 76px;
+	}
 	100%{
 		transform: rotate(164deg) translate(5px, -28px);
 		height: 76px;
@@ -178,11 +208,11 @@ body {
 }
 
 #left-lower-arm {
-	height: 32px;
+	height: 33px;
 	width: 15px;
 	background-color: black;
 	/* animation: left-lower-arm 0.6s 0.5s infinite normal; */
-	transform: rotate(26deg) translate(6px, -23px);
+	transform: rotate(76deg) translate(73px, -10px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -216,6 +246,14 @@ body {
 		transform: rotate(26deg) translate(6px, -23px);
 		height: 32px;
 	}
+	70%{
+		transform: rotate(26deg) translate(22px, -8px);
+		height: 38px;
+	}
+	80%{
+		transform: rotate(76deg) translate(73px, -10px);
+		height: 33px;
+	}
 	100%{
 		transform: rotate(130deg) translate(41px, -21px);
 		height: 68px;
@@ -227,7 +265,7 @@ body {
 	width: 15px;
 	background-color: black;
 	/* animation: spine 0.6s 0.5s infinite normal; */
-	transform: rotate(-7deg) translate(-50px, 12px);
+	transform: rotate(7deg) translate(-16px, 29px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -261,6 +299,14 @@ body {
 		transform: rotate(-7deg) translate(-50px, 12px);
 		height: 138px;
 	}
+	70%{
+		transform: rotate(0deg) translate(-36px, 13px);
+		height: 138px;
+	}
+	80%{
+		transform: rotate(7deg) translate(-16px, 29px);
+		height: 138px;
+	}
 	100%{
 		transform: rotate(0deg) translate(-21px, 17px);
 		height: 123px;
@@ -268,11 +314,11 @@ body {
 }
 
 #right-upper-leg {
-	height: 90px;
+	height: 86px;
 	width: 15px;
 	background-color: black;
 	/* animation: right-upper-leg 0.6s 0.5s infinite normal; */
-	transform: rotate(39deg) translate(37px, 147px);
+	transform: rotate(47deg) translate(63px, 138px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -306,6 +352,14 @@ body {
 		transform: rotate(39deg) translate(37px, 147px);
 		height: 90px;
 	}
+	70%{
+		transform: rotate(41deg) translate(41px, 138px);
+		height: 86px;
+	}
+	80%{
+		transform: rotate(47deg) translate(63px, 138px);
+		height: 86px;
+	}
 	100%{
 		transform: rotate(115deg) translate(89px, 21px);
 		height: 95px;
@@ -313,11 +367,11 @@ body {
 }
 
 #right-lower-leg {
-	height: 52px;
+	height: 62px;
 	width: 15px;
 	background-color: black;
 	/* animation: right-lower-leg 0.6s 0.5s infinite normal; */
-	transform: rotate(146deg) translate(178px, -125px);
+	transform: rotate(154deg) translate(152px, -145px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -351,6 +405,14 @@ body {
 		transform: rotate(146deg) translate(178px, -125px);
 		height: 52px;
 	}
+	70%{
+		transform: rotate(167deg) translate(119px, -176px);
+		height: 62px;
+	}
+	80%{
+		transform: rotate(154deg) translate(152px, -145px);
+		height: 62px;
+	}
 	100%{
 		transform: rotate(172deg) translate(106px, -81px);
 		height: 47px;
@@ -358,11 +420,11 @@ body {
 }
 
 #left-upper-leg {
-	height: 91px;
+	height: 59px;
 	width: 15px;
 	background-color: black;
 	/* animation: left-upper-leg 0.6s 0.5s infinite normal; */
-	transform: rotate(-104deg) translate(-92px, -23px);
+	transform: rotate(-30deg) translate(-85px, 119px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -396,6 +458,14 @@ body {
 		transform: rotate(-104deg) translate(-92px, -23px);
 		height: 91px;
 	}
+	70%{
+		transform: rotate(-63deg) translate(-107px, 51px);
+		height: 91px;
+	}
+	80%{
+		transform: rotate(-30deg) translate(-85px, 119px);
+		height: 59px;
+	}
 	100%{
 		transform: rotate(-12deg) translate(-41px, 117px);
 		height: 67px;
@@ -403,11 +473,11 @@ body {
 }
 
 #left-lower-leg {
-	height: 56px;
+	height: 64px;
 	width: 15px;
 	background-color: black;
 	/* animation: left-lower-leg 0.6s 0.5s infinite normal; */
-	transform: rotate(8deg) translate(51px, 120px);
+	transform: rotate(9deg) translate(23px, 189px);
 	border-radius: 15px;
 	position: absolute;
 }
@@ -440,6 +510,14 @@ body {
 	60%{
 		transform: rotate(8deg) translate(51px, 120px);
 		height: 56px;
+	}
+	70%{
+		transform: rotate(24deg) translate(91px, 151px);
+		height: 56px;
+	}
+	80%{
+		transform: rotate(9deg) translate(23px, 189px);
+		height: 64px;
 	}
 	100%{
 		transform: rotate(12deg) translate(22px, 177px);

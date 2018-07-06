@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
+import Logo from './logo.svg'
 import './styles.css';
 import './Head.css';
-import { ReactComponent as Logo } from './logo.svg'
 
 class App extends Component {
   render() {
     return (
 	<div>
-    <Logo />
+    <img alt="dancing red guava" id="head" src={Logo} />
 		<div id="right-upper-arm"></div>
 		<div id="right-lower-arm"></div>
 		<div id="right-hand"></div>

@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import Head from './head.svg'
+import Head from './Head'
 import RightUpperArm from './RightUpperArm';
 import RightLowerArm from './RightLowerArm';
 import './styles.css';
@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
   <Fragment>
-    <img alt="dancing red guava" id="head" src={Head} />
+    <Head />
     <RightUpperArm />
     <RightLowerArm />
     <div id="left-upper-arm"></div>

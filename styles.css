@@ -7,6 +7,14 @@ body {
 	position: absolute;
 }
 
+/* 927 px */
+#img {
+	position: absolute;
+	left: 246px;
+	top: 201px;
+	z-index: 1;
+}
+
 #head {
 	transform: rotate(1deg) translate(-138px, -181px);
 	position: absolute;

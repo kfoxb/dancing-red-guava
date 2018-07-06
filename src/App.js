@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
-import SingleDancingGuava from './SingleDancingGuava';
+import DancingGuava from './DancingGuava';
 
 class App extends Component {
+  state = {
+    bassDropped: false,
+  }
+
   render() {
+    if (this.state.bassDropped) {
+      return (<div>Multiple Dancers</div>);
+    }
     return (
-      <SingleDancingGuava />
+      <DancingGuava x={50} y={50}/>
     );
   }
 }

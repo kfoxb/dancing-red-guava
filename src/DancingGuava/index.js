@@ -3,6 +3,7 @@ import Head from './Head'
 import RightUpperArm from './RightUpperArm';
 import RightLowerArm from './RightLowerArm';
 import LeftUpperArm from './LeftUpperArm';
+import LeftLowerArm from './LeftLowerArm';
 import './styles.css';
 
 class App extends Component {
@@ -13,7 +14,7 @@ class App extends Component {
     <RightUpperArm />
     <RightLowerArm />
     <LeftUpperArm />
-    <div id="left-lower-arm"></div>
+    <LeftLowerArm />
     <div id="right-upper-leg"></div>
     <div id="right-lower-leg"></div>
     <div id="left-upper-leg"></div>

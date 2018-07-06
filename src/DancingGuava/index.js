@@ -7,6 +7,7 @@ import LeftLowerArm from './LeftLowerArm';
 import RightUpperLeg from './RightUpperLeg';
 import RightLowerLeg from './RightLowerLeg';
 import LeftUpperLeg from './LeftUpperLeg';
+import LeftLowerLeg from './LeftLowerLeg';
 import Spine from './Spine';
 import './styles.css';
 
@@ -22,7 +23,7 @@ class DancingGuava extends Component {
         <RightUpperLeg />
         <RightLowerLeg />
         <LeftUpperLeg />
-        <div id="left-lower-leg"></div>
+        <LeftLowerLeg />
         <Spine />
       </Fragment>
     );

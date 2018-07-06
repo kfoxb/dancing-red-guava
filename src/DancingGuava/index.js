@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Head from './head.svg'
 import RightUpperArm from './RightUpperArm';
+import RightLowerArm from './RightLowerArm';
 import './styles.css';
 
 class App extends Component {
@@ -9,7 +10,7 @@ class App extends Component {
   <Fragment>
     <img alt="dancing red guava" id="head" src={Head} />
     <RightUpperArm />
-    <div id="right-lower-arm"></div>
+    <RightLowerArm />
     <div id="left-upper-arm"></div>
     <div id="left-lower-arm"></div>
     <div id="right-upper-leg"></div>

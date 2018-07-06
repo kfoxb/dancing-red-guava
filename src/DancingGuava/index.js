@@ -9,7 +9,6 @@ import RightLowerLeg from './RightLowerLeg';
 import LeftUpperLeg from './LeftUpperLeg';
 import LeftLowerLeg from './LeftLowerLeg';
 import Spine from './Spine';
-import './styles.css';
 
 class DancingGuava extends Component {
   render() {

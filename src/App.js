@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import DancingGuava from './DancingGuava';
+import SingleDancingGuava from './SingleDancingGuava';
 
 class App extends Component {
   render() {
     return (
-	<div>
-    <DancingGuava />
-	</div>
+      <SingleDancingGuava />
     );
   }
 }

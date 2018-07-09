@@ -12,7 +12,7 @@ import LeftLowerLeg from './LeftLowerLeg';
 import Spine from './Spine';
 
 
-export default function DancingGuava ({ x, y }) {
+export default function DancingGuava ({ x, y, delay }) {
   const Container = styled.div`
     position: absolute;
     top: ${y}%;
@@ -21,7 +21,7 @@ export default function DancingGuava ({ x, y }) {
     transform: translate(-50%, -50%);
   `
 
-  const animation = '0.8571428572s 0.5s infinite normal';
+  const animation = `0.8571428572s ${delay}s infinite normal`;
   return (
     <Container>
       <Head animation={animation}/>
@@ -36,4 +36,8 @@ export default function DancingGuava ({ x, y }) {
       <Spine animation={animation}/>
     </Container>
   );
+}
+
+DancingGuava.defaultProps = {
+  delay: 0.5,
 }

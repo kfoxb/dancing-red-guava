@@ -19,7 +19,7 @@ class App extends Component {
       const dancers = x * y / 120000;
       for (let i = 0; i < dancers; i++) {
         const x = App.getRandomCoord();
-        res.push((<DancingGuava key={x} x={x} y={App.getRandomCoord()}/>))
+        res.push((<DancingGuava delay={x * -1}key={x} x={x} y={App.getRandomCoord()}/>))
       }
       return res;
     }

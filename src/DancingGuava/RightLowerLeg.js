@@ -1,3 +1,4 @@
+import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const RightLowerLegAnimation = keyframes`
@@ -47,14 +48,15 @@ const RightLowerLegAnimation = keyframes`
   }
 `;
 
-const RightLowerLeg = styled.div`
-  height: 62px;
-  width: 15px;
-  background-color: black;
-  animation: ${RightLowerLegAnimation} 0.8571428572s 0.5s infinite normal;
-  transform: rotate(165deg) translate(121px, -130px);
-  border-radius: 15px;
-  position: absolute;
-`
-
-export default RightLowerLeg;
+export default function RightLowerLeg({ animation }) {
+  const RightLowerLegDiv = styled.div`
+    height: 62px;
+    width: 15px;
+    background-color: black;
+    animation: ${RightLowerLegAnimation} ${animation};
+    transform: rotate(165deg) translate(121px, -130px);
+    border-radius: 15px;
+    position: absolute;
+  `
+  return (<RightLowerLegDiv />);
+};

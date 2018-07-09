@@ -1,3 +1,4 @@
+import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const RightUpperLegAnimation = keyframes`
@@ -47,14 +48,15 @@ const RightUpperLegAnimation = keyframes`
   }
 `;
 
-const RightUpperLeg = styled.div`
-  height: 70px;
-  width: 15px;
-  background-color: black;
-  animation: ${RightUpperLegAnimation} 0.8571428572s 0.5s infinite normal;
-  transform: rotate(79deg) translate(111px, 85px);
-  border-radius: 15px;
-  position: absolute;
-`
-
-export default RightUpperLeg;
+export default function RightUpperLeg({ animation }) {
+  const RightUpperLegDiv = styled.div`
+    height: 70px;
+    width: 15px;
+    background-color: black;
+    animation: ${RightUpperLegAnimation} ${animation};
+    transform: rotate(79deg) translate(111px, 85px);
+    border-radius: 15px;
+    position: absolute;
+  `
+  return (<RightUpperLegDiv />);
+};

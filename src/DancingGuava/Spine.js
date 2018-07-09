@@ -1,3 +1,4 @@
+import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const SpineAnimation = keyframes`
@@ -47,14 +48,15 @@ const SpineAnimation = keyframes`
   }
 `;
 
-const Spine = styled.div`
-  height: 138px;
-  width: 15px;
-  background-color: black;
-  animation: ${SpineAnimation} 0.8571428572s 0.5s infinite normal;
-  transform: rotate(12deg) translate(-9px, 29px);
-  border-radius: 15px;
-  position: absolute;
-`
-
-export default Spine;
+export default function Spine({ animation }) {
+  const SpineDiv = styled.div`
+    height: 138px;
+    width: 15px;
+    background-color: black;
+    animation: ${SpineAnimation} ${animation};
+    transform: rotate(12deg) translate(-9px, 29px);
+    border-radius: 15px;
+    position: absolute;
+  `
+  return (<SpineDiv />);
+};

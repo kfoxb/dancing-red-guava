@@ -1,3 +1,4 @@
+import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const LeftUpperLegAnimated = keyframes`
@@ -47,14 +48,15 @@ const LeftUpperLegAnimated = keyframes`
   }
 `;
 
-const LeftUpperLeg = styled.div`
-  height: 59px;
-  width: 15px;
-  background-color: black;
-  animation: ${LeftUpperLegAnimated} 0.8571428572s 0.5s infinite normal;
-  transform: rotate(-27deg) translate(-78px, 123px);
-  border-radius: 15px;
-  position: absolute;
-`;
-
-export default LeftUpperLeg;
+export default function LeftUpperLeg({ animation }) {
+  const LeftUpperLegDiv = styled.div`
+    height: 59px;
+    width: 15px;
+    background-color: black;
+    animation: ${LeftUpperLegAnimated} ${animation};
+    transform: rotate(-27deg) translate(-78px, 123px);
+    border-radius: 15px;
+    position: absolute;
+  `;
+  return (<LeftUpperLegDiv />);
+};

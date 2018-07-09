@@ -1,3 +1,4 @@
+import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const RightLowerArmAnimation = keyframes`
@@ -47,14 +48,15 @@ const RightLowerArmAnimation = keyframes`
 	}
 `;
 
-const RightLowerArm = styled.div`
-	height: 37px;
-	width: 15px;
-	background-color: black;
-	animation: ${RightLowerArmAnimation} 0.8571428572s 0.5s infinite normal;
-	transform: rotate(137deg) translate(96px, -7px);
-	border-radius: 15px;
-	position: absolute;
-`
-
-export default RightLowerArm;
+export default function RightLowerArm({ animation }) {
+  const RightLowerArmDiv = styled.div`
+  	height: 37px;
+  	width: 15px;
+  	background-color: black;
+  	animation: ${RightLowerArmAnimation} ${animation};
+  	transform: rotate(137deg) translate(96px, -7px);
+  	border-radius: 15px;
+  	position: absolute;
+  `
+  return (<RightLowerArmDiv />);
+};

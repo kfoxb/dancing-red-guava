@@ -21,18 +21,19 @@ export default function DancingGuava ({ x, y }) {
     transform: translate(-50%, -50%);
   `
 
+  const animation = '0.8571428572s 0.5s infinite normal';
   return (
     <Container>
-      <Head />
-      <RightUpperArm />
-      <RightLowerArm />
-      <LeftUpperArm />
-      <LeftLowerArm />
-      <RightUpperLeg />
-      <RightLowerLeg />
-      <LeftUpperLeg />
-      <LeftLowerLeg />
-      <Spine />
+      <Head animation={animation}/>
+      <RightUpperArm animation={animation}/>
+      <RightLowerArm animation={animation}/>
+      <LeftUpperArm animation={animation}/>
+      <LeftLowerArm animation={animation}/>
+      <RightUpperLeg animation={animation}/>
+      <RightLowerLeg animation={animation}/>
+      <LeftUpperLeg animation={animation}/>
+      <LeftLowerLeg animation={animation}/>
+      <Spine animation={animation}/>
     </Container>
   );
 }

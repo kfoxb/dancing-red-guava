@@ -1,3 +1,4 @@
+import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const LeftLowerLegAnimated = keyframes`
@@ -46,14 +47,15 @@ const LeftLowerLegAnimated = keyframes`
   }
 `;
 
-const LeftLowerLeg = styled.div`
-  height: 57px;
-  width: 15px;
-  background-color: black;
-  animation: ${LeftLowerLegAnimated} 0.8571428572s 0.5s infinite normal;
-  transform: rotate(9deg) translate(23px, 189px);
-  border-radius: 15px;
-  position: absolute;
-`;
-
-export default LeftLowerLeg;
+export default function LeftLowerLeg ({animation}){
+  const LeftLowerLegDiv = styled.div`
+    height: 57px;
+    width: 15px;
+    background-color: black;
+    animation: ${LeftLowerLegAnimated} ${animation};
+    transform: rotate(9deg) translate(23px, 189px);
+    border-radius: 15px;
+    position: absolute;
+  `;
+  return (<LeftLowerLegDiv />);
+};

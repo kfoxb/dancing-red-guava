@@ -1,3 +1,4 @@
+import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const LeftLowerArmAnimated = keyframes`
@@ -47,14 +48,17 @@ const LeftLowerArmAnimated = keyframes`
   }
 `;
 
-const LeftLowerArm = styled.div`
-  height: 33px;
-  width: 15px;
-  background-color: black;
-  animation: ${LeftLowerArmAnimated} 0.8571428572s 0.5s infinite normal;
-  transform: rotate(89deg) translate(90px, -22px);
-  border-radius: 15px;
-  position: absolute;
-`;
 
-export default LeftLowerArm;
+export default function LeftLowerArm({ animation }) {
+  const LeftLowerArmDiv = styled.div`
+    height: 33px;
+    width: 15px;
+    background-color: black;
+    animation: ${LeftLowerArmAnimated} ${animation};
+    transform: rotate(89deg) translate(90px, -22px);
+    border-radius: 15px;
+    position: absolute;
+  `;
+
+  return (<LeftLowerArmDiv />);
+};

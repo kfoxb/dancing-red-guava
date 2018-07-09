@@ -1,3 +1,4 @@
+import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const RightUpperArmAnimation = keyframes`
@@ -47,14 +48,16 @@ const RightUpperArmAnimation = keyframes`
 	}
 `;
 
-const RightUpperArm = styled.div`
-	height: 76px;
-	width: 15px;
-	background-color: black;
-	animation: ${RightUpperArmAnimation} 0.8571428572s 0.5s infinite normal;
-	transform: rotate(47deg) translate(-19px, 52px);
-	border-radius: 15px;
-	position: absolute;
-`
 
-export default RightUpperArm;
+export default function RightUpperArm({ animation }) {
+  const RightUpperArmDiv = styled.div`
+    height: 76px;
+    width: 15px;
+    background-color: black;
+    animation: ${RightUpperArmAnimation} ${animation};
+    transform: rotate(47deg) translate(-19px, 52px);
+    border-radius: 15px;
+    position: absolute;
+  `
+  return (<RightUpperArmDiv />);
+};

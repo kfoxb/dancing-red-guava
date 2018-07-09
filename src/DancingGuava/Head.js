@@ -38,14 +38,14 @@ const HeadAnimation = keyframes`
   }
 `;
 
-const StyledHead = styled.div`
-  transform: rotate(3deg) translate(-124px, -184px);
-  position: absolute;
-  z-index: 1;
-  animation: ${HeadAnimation} 0.8571428572s 0.5s infinite normal;
-`;
+export default function Head({ animation }) {
+  const StyledHead = styled.div`
+    transform: rotate(3deg) translate(-124px, -184px);
+    position: absolute;
+    z-index: 1;
+    animation: ${HeadAnimation} ${animation};
+  `;
 
-export default function Head() {
   return (
     <StyledHead>
       <HeadSvg />

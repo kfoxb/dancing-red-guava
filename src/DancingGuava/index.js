@@ -17,6 +17,7 @@ export default function DancingGuava ({ x, y }) {
     position: absolute;
     top: ${y}%;
     left: ${x}%;
+    z-index: ${Math.floor(y) - 100}
     transform: translate(-50%, -50%);
   `
 

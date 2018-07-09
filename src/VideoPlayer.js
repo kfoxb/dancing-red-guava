@@ -34,14 +34,13 @@ export default class VideoPlayer extends Component {
 
   initPlayer = () => {
     this.player = new YT.Player('player', {
-      height: '390',
-      width: '640',
+      height: '100',
+      width: '200',
       videoId: 'qV0LHCHf-pE',
       playerVars: {
         autoplay: 1,
         loop: 1,
         modestbranding: 1,
-        controls: 0,
         showInfo: 0,
       },
       events: {
@@ -55,6 +54,6 @@ export default class VideoPlayer extends Component {
   }
 
   render() {
-    return (<div id="player" style={{ display: 'none' }}/>);
+    return (<div id="player" />);
   }
 }

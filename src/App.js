@@ -7,13 +7,17 @@ class App extends Component {
 
   state = {
     bassDropped: false,
-    dancers: 10,
   }
 
   getDancers = () => {
     if (this.state.bassDropped) {
       let res = [];
-      for (let i = 0; i < this.state.dancers; i++) {
+      const e = document.documentElement;
+      const g = document.body;
+      const x = window.innerWidth || e.clientWidth || g.clientWidth;
+      const y = window.innerHeight|| e.clientHeight|| g.clientHeight;
+      const dancers = x * y / 120000;
+      for (let i = 0; i < dancers; i++) {
         const x = App.getRandomCoord();
         res.push((<DancingGuava key={x} x={x} y={App.getRandomCoord()}/>))
       }

@@ -22,12 +22,19 @@ export default class VideoPlayer extends Component {
     }
   }
 
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
   pollVideoTime = () => {
-    const interval = setInterval(() => {
+    this.interval = setInterval(() => {
       const time = this.player.getCurrentTime();
       if (time >= 15.5) {
-        this.props.setBassDropped();
-        clearInterval(interval);
+        this.props.setBassDropped(true);
+      }
+      if (time >= 29) {
+        this.player.seekTo(0);
+        this.props.setBassDropped(false);
       }
     }, 250);
   }

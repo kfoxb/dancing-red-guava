@@ -31,7 +31,10 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <VideoPlayer setBassDropped={(bassDropped) => this.setState({ bassDropped })}/>
+        <VideoPlayer
+          bassDropped={this.state.bassDropped}
+          setBassDropped={(bassDropped) => this.setState({ bassDropped })}
+        />
         { this.getDancers() }
       </Fragment>
     );

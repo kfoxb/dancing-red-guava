@@ -29,14 +29,17 @@ export default class VideoPlayer extends Component {
   pollVideoTime = () => {
     this.interval = setInterval(() => {
       const time = this.player.getCurrentTime();
-      if (time >= 15.5) {
+      if (time >= 15.5 && !this.props.bassDropped) {
         this.props.setBassDropped(true);
       }
-      if (time >= 29) {
-        this.player.seekTo(0);
-        this.props.setBassDropped(false);
-      }
     }, 250);
+  }
+
+  handleVideoStateChange = ({ data }) => {
+    if (data === 0) {
+      this.player.seekTo(0);
+      this.props.setBassDropped(false);
+    }
   }
 
   initPlayer = () => {
@@ -49,9 +52,11 @@ export default class VideoPlayer extends Component {
         loop: 1,
         modestbranding: 1,
         showInfo: 0,
+        end: 29,
       },
       events: {
-        'onReady': this.pollVideoTime,
+        onReady: this.pollVideoTime,
+        onStateChange: this.handleVideoStateChange,
       }
     });
   }

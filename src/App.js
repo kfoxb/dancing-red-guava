@@ -11,12 +11,15 @@ class App extends Component {
 
   getDancers = () => {
     if (this.state.bassDropped) {
+      setTimeout(() => this.forceUpdate(), 1000);
       let res = [];
       const e = document.documentElement;
       const g = document.body;
       const x = window.innerWidth || e.clientWidth || g.clientWidth;
       const y = window.innerHeight|| e.clientHeight|| g.clientHeight;
-      const dancers = x * y / 120000;
+      // firefox seems to be a bit slower, this lowers the total dancers
+      const dancerArea = navigator.userAgent.includes('Firefox') ? 240000 : 120000 
+      const dancers = x * y / dancerArea;
       for (let i = 0; i < dancers; i++) {
         const x = App.getRandomCoord();
         res.push((<DancingGuava delay={x * -1}key={x} x={x} y={App.getRandomCoord()}/>))

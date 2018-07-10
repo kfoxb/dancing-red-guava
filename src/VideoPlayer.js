@@ -37,8 +37,10 @@ export default class VideoPlayer extends Component {
 
   handleVideoStateChange = ({ data }) => {
     if (data === 0) {
+      clearInterval(this.interval);
       this.player.seekTo(0);
       this.props.setBassDropped(false);
+      this.pollVideoTime();
     }
   }
 
@@ -49,7 +51,6 @@ export default class VideoPlayer extends Component {
       videoId: 'qV0LHCHf-pE',
       playerVars: {
         autoplay: 1,
-        loop: 1,
         modestbranding: 1,
         showInfo: 0,
         end: 29,

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 
 const SpineAnimation = keyframes`
@@ -57,6 +58,10 @@ export default function Spine({ animation }) {
     transform: rotate(12deg) translate(-9px, 29px);
     border-radius: 15px;
     position: absolute;
-  `
+  `;
   return (<SpineDiv />);
+}
+
+Spine.propTypes = {
+  animation: PropTypes.string.isRequired,
 };

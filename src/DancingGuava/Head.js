@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
-import HeadSvg from './HeadSvg'
+import HeadSvg from './HeadSvg';
 
 const HeadAnimation = keyframes`
   0%{
@@ -51,4 +52,8 @@ export default function Head({ animation }) {
       <HeadSvg />
     </StyledHead>
   );
+}
+
+Head.propTypes = {
+  animation: PropTypes.string.isRequired,
 };

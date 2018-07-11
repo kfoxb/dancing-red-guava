@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 
 const RightUpperLegAnimation = keyframes`
@@ -57,6 +58,10 @@ export default function RightUpperLeg({ animation }) {
     transform: rotate(79deg) translate(111px, 85px);
     border-radius: 15px;
     position: absolute;
-  `
+  `;
   return (<RightUpperLegDiv />);
+}
+
+RightUpperLeg.propTypes = {
+  animation: PropTypes.string.isRequired,
 };

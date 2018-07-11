@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 
 const LeftLowerArmAnimated = keyframes`
@@ -61,4 +62,8 @@ export default function LeftLowerArm({ animation }) {
   `;
 
   return (<LeftLowerArmDiv />);
+}
+
+LeftLowerArm.propTypes = {
+  animation: PropTypes.string.isRequired,
 };

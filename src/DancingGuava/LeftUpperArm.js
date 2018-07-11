@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 
 const LeftUpperArmAnimated = keyframes`
@@ -60,4 +61,8 @@ export default function LeftUpperArm({ animation }) {
     position: absolute;
   `;
   return (<LeftUpperArmDiv />);
+}
+
+LeftUpperArm.propTypes = {
+  animation: PropTypes.string.isRequired,
 };

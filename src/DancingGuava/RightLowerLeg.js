@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 
 const RightLowerLegAnimation = keyframes`
@@ -57,6 +58,10 @@ export default function RightLowerLeg({ animation }) {
     transform: rotate(165deg) translate(121px, -130px);
     border-radius: 15px;
     position: absolute;
-  `
+  `;
   return (<RightLowerLegDiv />);
+}
+
+RightLowerLeg.propTypes = {
+  animation: PropTypes.string.isRequired,
 };

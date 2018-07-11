@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 
 const LeftLowerLegAnimated = keyframes`
@@ -47,7 +48,7 @@ const LeftLowerLegAnimated = keyframes`
   }
 `;
 
-export default function LeftLowerLeg ({animation}){
+export default function LeftLowerLeg({ animation }) {
   const LeftLowerLegDiv = styled.div`
     height: 57px;
     width: 15px;
@@ -58,4 +59,8 @@ export default function LeftLowerLeg ({animation}){
     position: absolute;
   `;
   return (<LeftLowerLegDiv />);
+}
+
+LeftLowerLeg.propTypes = {
+  animation: PropTypes.string.isRequired,
 };

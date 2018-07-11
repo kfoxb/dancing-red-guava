@@ -1,31 +1,32 @@
 /* global YT */
 import React, { Component } from 'react';
-
-let ready = false;
-
-window.onYouTubeIframeAPIReady = () => {
-  ready = true;
-};
+import PropTypes from 'prop-types';
 
 export default class VideoPlayer extends Component {
+  static propTypes = {
+    bassDropped: PropTypes.bool.isRequired,
+    setBassDropped: PropTypes.func.isRequired,
+  }
+
   constructor(props) {
     super(props);
     window.onYouTubeIframeAPIReady = this.onYouTubeIframeAPIReady;
     this.state = {
-      ready,
+      ready: false,
     };
   }
 
   componentDidMount() {
     const tag = document.createElement('script');
 
-    tag.src = "https://www.youtube.com/iframe_api";
+    tag.src = 'https://www.youtube.com/iframe_api';
     const firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   }
 
   componentDidUpdate(prevProps, prevState) {
-    if (!prevState.ready && this.state.ready) {
+    const { ready } = this.state;
+    if (!prevState.ready && ready) {
       this.initPlayer();
     }
   }
@@ -34,20 +35,26 @@ export default class VideoPlayer extends Component {
     clearInterval(this.interval);
   }
 
+  onYouTubeIframeAPIReady = () => {
+    this.setState({ ready: true });
+  }
+
   pollVideoTime = () => {
     this.interval = setInterval(() => {
+      const { bassDropped, setBassDropped } = this.props;
       const time = this.player.getCurrentTime();
-      if (time >= 15.5 && !this.props.bassDropped) {
-        this.props.setBassDropped(true);
+      if (time >= 15.5 && !bassDropped) {
+        setBassDropped(true);
       }
     }, 250);
   }
 
   handleVideoStateChange = ({ data }) => {
     if (data === 0) {
+      const { setBassDropped } = this.props;
       clearInterval(this.interval);
       this.player.seekTo(0);
-      this.props.setBassDropped(false);
+      setBassDropped(false);
       this.pollVideoTime();
     }
   }
@@ -66,12 +73,8 @@ export default class VideoPlayer extends Component {
       events: {
         onReady: this.pollVideoTime,
         onStateChange: this.handleVideoStateChange,
-      }
+      },
     });
-  }
-
-  onYouTubeIframeAPIReady = () => {
-    this.setState({ ready: true });
   }
 
   render() {

@@ -3,42 +3,40 @@ import DancingGuava from './DancingGuava';
 import VideoPlayer from './VideoPlayer';
 
 class App extends Component {
-  state = {
-    bassDropped: false,
-    paused: true,
+  constructor(props) {
+    super(props);
+    this.state = {
+      bassDropped: false,
+      dancerPositions: this.generateRandomDancerPositions(),
+      paused: true,
+    };
   }
 
   static getRandomCoord = () => Math.random() * 100;
 
   getDancers = () => {
-    const { bassDropped, paused } = this.state;
+    const { bassDropped, dancerPositions, paused } = this.state;
     if (bassDropped) {
       setTimeout(() => {
         // eslint-disable-next-line react/destructuring-assignment
         if (!this.state.paused) {
-          this.forceUpdate();
+          this.setState({
+            dancerPositions: this.generateRandomDancerPositions(),
+          });
         }
       }, 1000);
-      const res = [];
-      const e = document.documentElement;
-      const g = document.body;
-      const x = window.innerWidth || e.clientWidth || g.clientWidth;
-      const y = window.innerHeight || e.clientHeight || g.clientHeight;
-      // firefox seems to be a bit slower, this lowers the total dancers
-      const dancerArea = navigator.userAgent.includes('Firefox') ? 240000 : 120000;
-      const dancers = x * y / dancerArea;
-      for (let i = 0; i < dancers; i += 1) {
-        const xCoords = App.getRandomCoord();
-        res.push((
+      return dancerPositions.map((coords) => {
+        const { x, y } = coords;
+        return (
           <DancingGuava
-            delay={xCoords * -1}
-            key={xCoords}
+            delay={x * -1}
+            key={x}
             paused={paused}
-            x={xCoords}
-            y={App.getRandomCoord()}
-          />));
-      }
-      return res;
+            x={x}
+            y={y}
+          />
+        );
+      });
     }
     return (
       <DancingGuava
@@ -47,6 +45,21 @@ class App extends Component {
         y={50}
       />
     );
+  }
+
+  generateRandomDancerPositions = () => {
+    const res = [];
+    const e = document.documentElement;
+    const g = document.body;
+    const x = window.innerWidth || e.clientWidth || g.clientWidth;
+    const y = window.innerHeight || e.clientHeight || g.clientHeight;
+    // firefox seems to be a bit slower, this lowers the total dancers
+    const dancerArea = navigator.userAgent.includes('Firefox') ? 240000 : 120000;
+    const dancers = x * y / dancerArea;
+    for (let i = 0; i < dancers; i += 1) {
+      res.push({ x: App.getRandomCoord(), y: App.getRandomCoord() });
+    }
+    return res;
   }
 
   render() {

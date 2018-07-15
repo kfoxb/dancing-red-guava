@@ -5,14 +5,20 @@ import VideoPlayer from './VideoPlayer';
 class App extends Component {
   state = {
     bassDropped: false,
+    paused: true,
   }
 
   static getRandomCoord = () => Math.random() * 100;
 
   getDancers = () => {
-    const { bassDropped } = this.state;
+    const { bassDropped, paused } = this.state;
     if (bassDropped) {
-      setTimeout(() => this.forceUpdate(), 1000);
+      setTimeout(() => {
+        // eslint-disable-next-line react/destructuring-assignment
+        if (!this.state.paused) {
+          this.forceUpdate();
+        }
+      }, 1000);
       const res = [];
       const e = document.documentElement;
       const g = document.body;
@@ -27,6 +33,7 @@ class App extends Component {
           <DancingGuava
             delay={xCoords * -1}
             key={xCoords}
+            paused={paused}
             x={xCoords}
             y={App.getRandomCoord()}
           />));
@@ -34,7 +41,11 @@ class App extends Component {
       return res;
     }
     return (
-      <DancingGuava x={50} y={50} />
+      <DancingGuava
+        paused={paused}
+        x={50}
+        y={50}
+      />
     );
   }
 
@@ -45,6 +56,7 @@ class App extends Component {
         <VideoPlayer
           bassDropped={bassDropped}
           setBassDropped={isDropped => this.setState({ bassDropped: isDropped })}
+          setPaused={isPaused => this.setState({ paused: isPaused })}
         />
         { this.getDancers() }
       </Fragment>

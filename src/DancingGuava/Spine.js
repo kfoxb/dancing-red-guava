@@ -49,7 +49,7 @@ const SpineAnimation = keyframes`
   }
 `;
 
-export default function Spine({ animation }) {
+export default function Spine({ animation, extraCss }) {
   const SpineDiv = styled.div`
     height: 138px;
     width: 15px;
@@ -58,10 +58,16 @@ export default function Spine({ animation }) {
     transform: rotate(12deg) translate(-9px, 29px);
     border-radius: 15px;
     position: absolute;
+    ${extraCss}
   `;
   return (<SpineDiv />);
 }
 
 Spine.propTypes = {
   animation: PropTypes.string.isRequired,
+  extraCss: PropTypes.string,
+};
+
+Spine.defaultProps = {
+  extraCss: '',
 };

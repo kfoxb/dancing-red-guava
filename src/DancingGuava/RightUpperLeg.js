@@ -49,7 +49,7 @@ const RightUpperLegAnimation = keyframes`
   }
 `;
 
-export default function RightUpperLeg({ animation }) {
+export default function RightUpperLeg({ animation, extraCss }) {
   const RightUpperLegDiv = styled.div`
     height: 70px;
     width: 15px;
@@ -58,10 +58,16 @@ export default function RightUpperLeg({ animation }) {
     transform: rotate(79deg) translate(111px, 85px);
     border-radius: 15px;
     position: absolute;
+    ${extraCss}
   `;
   return (<RightUpperLegDiv />);
 }
 
 RightUpperLeg.propTypes = {
   animation: PropTypes.string.isRequired,
+  extraCss: PropTypes.string,
+};
+
+RightUpperLeg.defaultProps = {
+  extraCss: '',
 };

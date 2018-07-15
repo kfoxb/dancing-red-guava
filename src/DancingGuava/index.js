@@ -13,7 +13,9 @@ import LeftLowerLeg from './LeftLowerLeg';
 import Spine from './Spine';
 
 
-export default function DancingGuava({ x, y, delay }) {
+export default function DancingGuava({
+  delay, paused, x, y,
+}) {
   const Container = styled.div`
     position: absolute;
     top: ${y}%;
@@ -25,16 +27,24 @@ export default function DancingGuava({ x, y, delay }) {
   const animation = `0.8571428572s ${delay}s infinite normal`;
   return (
     <Container>
-      <Head animation={animation} />
-      <RightUpperArm animation={animation} />
-      <RightLowerArm animation={animation} />
-      <LeftUpperArm animation={animation} />
-      <LeftLowerArm animation={animation} />
-      <RightUpperLeg animation={animation} />
-      <RightLowerLeg animation={animation} />
-      <LeftUpperLeg animation={animation} />
-      <LeftLowerLeg animation={animation} />
-      <Spine animation={animation} />
+      {[
+        Head,
+        RightUpperArm,
+        RightLowerArm,
+        LeftUpperArm,
+        LeftLowerArm,
+        RightUpperLeg,
+        RightLowerLeg,
+        LeftUpperLeg,
+        LeftLowerLeg,
+        Spine,
+      ].map(C => (
+        <C
+          animation={animation}
+          extraCss={`animation-play-state: ${paused ? 'paused' : 'running'};`}
+          key={C.name}
+        />
+      ))}
     </Container>
   );
 }
@@ -45,6 +55,7 @@ DancingGuava.defaultProps = {
 
 DancingGuava.propTypes = {
   delay: PropTypes.number,
+  paused: PropTypes.bool.isRequired,
   x: PropTypes.number.isRequired,
   y: PropTypes.number.isRequired,
 };

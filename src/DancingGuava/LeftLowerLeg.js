@@ -48,7 +48,7 @@ const LeftLowerLegAnimated = keyframes`
   }
 `;
 
-export default function LeftLowerLeg({ animation }) {
+export default function LeftLowerLeg({ animation, extraCss }) {
   const LeftLowerLegDiv = styled.div`
     height: 57px;
     width: 15px;
@@ -57,10 +57,16 @@ export default function LeftLowerLeg({ animation }) {
     transform: rotate(9deg) translate(23px, 189px);
     border-radius: 15px;
     position: absolute;
+    ${extraCss}
   `;
   return (<LeftLowerLegDiv />);
 }
 
 LeftLowerLeg.propTypes = {
   animation: PropTypes.string.isRequired,
+  extraCss: PropTypes.string,
+};
+
+LeftLowerLeg.defaultProps = {
+  extraCss: '',
 };

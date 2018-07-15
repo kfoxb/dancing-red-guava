@@ -49,7 +49,7 @@ const LeftUpperLegAnimated = keyframes`
   }
 `;
 
-export default function LeftUpperLeg({ animation }) {
+export default function LeftUpperLeg({ animation, extraCss }) {
   const LeftUpperLegDiv = styled.div`
     height: 59px;
     width: 15px;
@@ -58,10 +58,16 @@ export default function LeftUpperLeg({ animation }) {
     transform: rotate(-27deg) translate(-78px, 123px);
     border-radius: 15px;
     position: absolute;
+    ${extraCss}
   `;
   return (<LeftUpperLegDiv />);
 }
 
 LeftUpperLeg.propTypes = {
   animation: PropTypes.string.isRequired,
+  extraCss: PropTypes.string,
+};
+
+LeftUpperLeg.defaultProps = {
+  extraCss: '',
 };

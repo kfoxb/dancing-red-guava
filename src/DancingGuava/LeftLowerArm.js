@@ -50,7 +50,7 @@ const LeftLowerArmAnimated = keyframes`
 `;
 
 
-export default function LeftLowerArm({ animation }) {
+export default function LeftLowerArm({ animation, extraCss }) {
   const LeftLowerArmDiv = styled.div`
     height: 33px;
     width: 15px;
@@ -59,6 +59,7 @@ export default function LeftLowerArm({ animation }) {
     transform: rotate(89deg) translate(90px, -22px);
     border-radius: 15px;
     position: absolute;
+    ${extraCss}
   `;
 
   return (<LeftLowerArmDiv />);
@@ -66,4 +67,9 @@ export default function LeftLowerArm({ animation }) {
 
 LeftLowerArm.propTypes = {
   animation: PropTypes.string.isRequired,
+  extraCss: PropTypes.string,
+};
+
+LeftLowerArm.defaultProps = {
+  extraCss: '',
 };

@@ -49,7 +49,7 @@ const RightLowerArmAnimation = keyframes`
   }
 `;
 
-export default function RightLowerArm({ animation }) {
+export default function RightLowerArm({ animation, extraCss }) {
   const RightLowerArmDiv = styled.div`
     height: 37px;
     width: 15px;
@@ -58,10 +58,16 @@ export default function RightLowerArm({ animation }) {
     transform: rotate(137deg) translate(96px, -7px);
     border-radius: 15px;
     position: absolute;
+    ${extraCss}
   `;
   return (<RightLowerArmDiv />);
 }
 
 RightLowerArm.propTypes = {
   animation: PropTypes.string.isRequired,
+  extraCss: PropTypes.string,
+};
+
+RightLowerArm.defaultProps = {
+  extraCss: '',
 };

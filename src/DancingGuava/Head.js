@@ -39,12 +39,13 @@ const HeadAnimation = keyframes`
   }
 `;
 
-export default function Head({ animation }) {
+export default function Head({ animation, extraCss }) {
   const StyledHead = styled.div`
     transform: rotate(3deg) translate(-124px, -184px);
     position: absolute;
     z-index: 1;
     animation: ${HeadAnimation} ${animation};
+    ${extraCss}
   `;
 
   return (
@@ -56,4 +57,9 @@ export default function Head({ animation }) {
 
 Head.propTypes = {
   animation: PropTypes.string.isRequired,
+  extraCss: PropTypes.string,
+};
+
+Head.defaultProps = {
+  extraCss: '',
 };

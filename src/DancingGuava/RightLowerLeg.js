@@ -49,7 +49,7 @@ const RightLowerLegAnimation = keyframes`
   }
 `;
 
-export default function RightLowerLeg({ animation }) {
+export default function RightLowerLeg({ animation, extraCss }) {
   const RightLowerLegDiv = styled.div`
     height: 62px;
     width: 15px;
@@ -58,10 +58,16 @@ export default function RightLowerLeg({ animation }) {
     transform: rotate(165deg) translate(121px, -130px);
     border-radius: 15px;
     position: absolute;
+    ${extraCss}
   `;
   return (<RightLowerLegDiv />);
 }
 
 RightLowerLeg.propTypes = {
   animation: PropTypes.string.isRequired,
+  extraCss: PropTypes.string,
+};
+
+RightLowerLeg.defaultProps = {
+  extraCss: '',
 };

@@ -6,6 +6,7 @@ export default class VideoPlayer extends Component {
   static propTypes = {
     bassDropped: PropTypes.bool.isRequired,
     setBassDropped: PropTypes.func.isRequired,
+    setPaused: PropTypes.func.isRequired,
   }
 
   constructor(props) {
@@ -39,7 +40,7 @@ export default class VideoPlayer extends Component {
     this.setState({ ready: true });
   }
 
-  pollVideoTime = () => {
+  pollVideo = () => {
     this.interval = setInterval(() => {
       const { bassDropped, setBassDropped } = this.props;
       const time = this.player.getCurrentTime();
@@ -50,12 +51,17 @@ export default class VideoPlayer extends Component {
   }
 
   handleVideoStateChange = ({ data }) => {
+    const { setBassDropped, setPaused } = this.props;
     if (data === 0) {
-      const { setBassDropped } = this.props;
       clearInterval(this.interval);
       this.player.seekTo(0);
       setBassDropped(false);
-      this.pollVideoTime();
+      setPaused(true);
+      this.pollVideo();
+    } else if (data === 1) {
+      setPaused(false);
+    } else {
+      setPaused(true);
     }
   }
 
@@ -71,7 +77,7 @@ export default class VideoPlayer extends Component {
         end: 29,
       },
       events: {
-        onReady: this.pollVideoTime,
+        onReady: this.pollVideo,
         onStateChange: this.handleVideoStateChange,
       },
     });

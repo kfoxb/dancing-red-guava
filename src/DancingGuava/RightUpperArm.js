@@ -50,7 +50,7 @@ const RightUpperArmAnimation = keyframes`
 `;
 
 
-export default function RightUpperArm({ animation }) {
+export default function RightUpperArm({ animation, extraCss }) {
   const RightUpperArmDiv = styled.div`
     height: 76px;
     width: 15px;
@@ -59,10 +59,16 @@ export default function RightUpperArm({ animation }) {
     transform: rotate(47deg) translate(-19px, 52px);
     border-radius: 15px;
     position: absolute;
+    ${extraCss}
   `;
   return (<RightUpperArmDiv />);
 }
 
 RightUpperArm.propTypes = {
   animation: PropTypes.string.isRequired,
+  extraCss: PropTypes.string,
+};
+
+RightUpperArm.defaultProps = {
+  extraCss: '',
 };

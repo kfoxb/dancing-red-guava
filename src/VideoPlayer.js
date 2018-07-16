@@ -1,6 +1,7 @@
 /* global YT */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { videoHeight, videoWidth } from './constants';
 
 export default class VideoPlayer extends Component {
   static propTypes = {
@@ -67,8 +68,8 @@ export default class VideoPlayer extends Component {
 
   initPlayer = () => {
     this.player = new YT.Player('player', {
-      height: '100',
-      width: '200',
+      height: videoHeight,
+      width: videoWidth,
       videoId: 'qV0LHCHf-pE',
       playerVars: {
         autoplay: 1,

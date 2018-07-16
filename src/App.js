@@ -91,7 +91,6 @@ class App extends Component {
     const dancerSize = this.getDancerSizeAsPercentage(x, y);
     for (let i = 0; i < dancers; i += 1) {
       res.push(App.getRandomCoords(videoEdges, dancerSize));
-      console.log('dancer coords', res[res.length - 1]);
     }
     return res;
   }

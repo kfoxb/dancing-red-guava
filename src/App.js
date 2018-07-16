@@ -1,9 +1,16 @@
 import React, { Component, Fragment } from 'react';
+import styled from 'styled-components';
 import DancingGuava from './DancingGuava';
 import VideoPlayer from './VideoPlayer';
 import {
   dancerHeight, dancerWidth, videoHeight, videoWidth,
 } from './constants';
+
+const FlexDiv = styled.div`
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+`;
 
 class App extends Component {
   constructor(props) {
@@ -96,14 +103,17 @@ class App extends Component {
   }
 
   render() {
-    const { bassDropped } = this.state;
+    const { bassDropped, paused } = this.state;
     return (
       <Fragment>
-        <VideoPlayer
-          bassDropped={bassDropped}
-          setBassDropped={isDropped => this.setState({ bassDropped: isDropped })}
-          setPaused={isPaused => this.setState({ paused: isPaused })}
-        />
+        <FlexDiv>
+          <VideoPlayer
+            bassDropped={bassDropped}
+            setBassDropped={isDropped => this.setState({ bassDropped: isDropped })}
+            setPaused={isPaused => this.setState({ paused: isPaused })}
+          />
+          { paused && '<--- Press Play' }
+        </FlexDiv>
         { this.getDancers() }
       </Fragment>
     );

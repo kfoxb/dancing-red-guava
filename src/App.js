@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
+import github from './github.png';
 import DancingGuava from './DancingGuava';
 import VideoPlayer from './VideoPlayer';
 import {
@@ -10,6 +11,19 @@ const FlexDiv = styled.div`
   display: flex;
   align-items: center;
   font-size: 36px;
+`;
+
+const GithubImage = styled.img`
+  max-width: ${videoWidth / 2}px;
+  max-height: ${videoHeight / 2}px;
+  vertical-align: bottom;
+  filter: opacity(10%);
+`;
+
+const GithubLink = styled.a`
+  position: fixed;
+  bottom: 0;
+  right: 0;
 `;
 
 class App extends Component {
@@ -114,6 +128,12 @@ class App extends Component {
           />
           { paused && '<--- Press Play' }
         </FlexDiv>
+        <GithubLink href="https://github.com/kfoxb/dancing-red-guava">
+          <GithubImage
+            alt="github logo"
+            src={github}
+          />
+        </GithubLink>
         { this.getDancers() }
       </Fragment>
     );

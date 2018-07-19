@@ -73,9 +73,10 @@ export default class VideoPlayer extends Component {
       videoId: 'qV0LHCHf-pE',
       playerVars: {
         autoplay: 1,
-        modestbranding: 1,
-        showInfo: 0,
         end: 29,
+        modestbranding: 1,
+        playsinline: 1,
+        showInfo: 0,
       },
       events: {
         onReady: this.pollVideo,
